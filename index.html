@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFuture — Современная учеба</title>
+    <!-- Подключаем шрифт Inter и иконки Boxicons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Подключаем наш CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Логотип -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class='bx bxs-graduation'></i>
+                </div>
+                <span class="logo-text">Edu<span>Future</span></span>
+            </a>
+
+            <!-- Навигационные ссылки -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#courses" class="nav-link active">
+                            <i class='bx bx-book-open'></i> Курсы
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#ai" class="nav-link dropdown-toggle">
+                            <i class='bx bx-bot'></i> AI-Тьютор 
+                            <i class='bx bx-chevron-down arrow'></i>
+                        </a>
+                        <!-- Выпадающее меню -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class='bx bx-code-alt'></i> Проверка кода</a></li>
+                            <li><a href="#"><i class='bx bx-conversation'></i> Практика языков</a></li>
+                            <li><a href="#"><i class='bx bx-brain'></i> Генератор тестов</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#roadmap" class="nav-link">
+                            <i class='bx bx-map-alt'></i> Траектория
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#community" class="nav-link">
+                            <i class='bx bx-group'></i> Комьюнити
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Прогресс обучения (виден внутри мобильного меню на телефонах) -->
+                <div class="mobile-progress">
+                    <span>Дневная цель: 75%</span>
+                    <div class="progress-bar"><div class="progress-fill"></div></div>
+                </div>
+            </nav>
+
+            <!-- Правая часть: поиск, тема, профиль -->
+            <div class="nav-actions">
+                <!-- Анимированный поиск -->
+                <div class="search-box" id="search-box">
+                    <input type="text" placeholder="Найти курс или тему..." class="search-input">
+                    <button class="search-btn" id="search-btn" title="Поиск">
+                        <i class='bx bx-search'></i>
+                    </button>
+                </div>
+
+                <!-- Индикатор ударного режима (Streak) -->
+                <div class="streak-badge" title="5 дней обучения подряд!">
+                    <i class='bx bxs-flame'></i>
+                    <span>5</span>
+                </div>
+
+                <!-- Переключатель темы -->
+                <button class="theme-toggle" id="theme-toggle" title="Сменить тему">
+                    <i class='bx bx-moon' id="theme-icon"></i>
+                </button>
+
+                <!-- Кнопка / Профиль -->
+                <a href="#login" class="btn-primary">Начать учиться</a>
+
+                <!-- Бургер-кнопка для мобильных -->
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Демо-контент для проверки скролла -->
+    <main style="padding-top: 120px; text-align: center; height: 150vh;">
+        <h1 style="opacity: 0.7;">Прокрутите вниз, чтобы увидеть анимацию навбара при скролле</h1>
+    </main>
+
+    <!-- Подключаем наш JS -->
+    <script src="index.js"></script>
+</body>
+</html>
