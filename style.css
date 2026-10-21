@@ -667,7 +667,7 @@ body {
    ========================================================================== */
 .hero-section {
   position: relative;
-  padding: 64px 0 96px;
+  padding: 120px 0 96px;
   overflow: hidden;
   background: radial-gradient(circle at 12% 18%, rgba(245, 243, 255, 0.9) 0%, rgba(251, 251, 254, 0) 55%),
               radial-gradient(circle at 88% 82%, rgba(243, 232, 255, 0.6) 0%, rgba(251, 251, 254, 0) 50%);
@@ -950,7 +950,7 @@ body {
   }
 
   .hero-section {
-    padding: 36px 0 64px;
+    padding: 100px 0 64px;
   }
 
   .hero-image {
